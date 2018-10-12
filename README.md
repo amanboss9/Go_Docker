@@ -46,7 +46,7 @@ Golang production code boilerplate with Redis, MongoDB, Docker and Logger includ
 - Stop indivisual container
 `docker stop container-id`
 - Remove all containers
-`docker rm $(docker ps -aq)`
+`docker rm $(docker ps -aq)` or `docker ps -aq --no-trunc -f status=exited | xargs docker rm`
 - Remove already in use container
 `docker rm container-id`
 - Remove all Images
