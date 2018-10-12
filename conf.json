@@ -1,8 +1,8 @@
 {
-  "DbHost": "127.0.0.1:27017",
+  "DbHost": "172.17.0.2:27017",
   "Database": "admin",
-  "DbUsername": "admin",
-  "DbPassword": "admin",
+  "DbUsername": "",
+  "DbPassword": "",
   "DbTimeout": 60,
   "DbName": "GO_DOCKER_DB",
 
@@ -11,6 +11,6 @@
   "RedisAddress": "127.0.0.1:6379",
   "ListenPort": ":9235",
   "AccessLogPath": "",
-  "ProxyDomain": "49.40.2.239",
-  "RedisPassword": "aa703dde347cb9bda9d74f1ecd2355ff2337b8cffc11704dc93a72e06944d32d1f66f50c"
+  "ProxyDomain": "192.68.24.21",
+  "RedisPassword": "2400788e313fa6cf94626674a45c23d8ff303ce3e3609981df7d056ea70c069729"
 }
