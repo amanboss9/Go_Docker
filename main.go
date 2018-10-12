@@ -16,7 +16,11 @@ var logger logging.Logger
 
 func main() {
 	// Set Gin to production mode
+<<<<<<< HEAD
 	gin.SetMode(gin.DebugMode)
+=======
+	gin.SetMode(gin.ReleaseMode)
+>>>>>>> development
 
 	if err := logging.ApplyConfigFile("./go_logconfig.yml"); err != nil {
 		log.Printf("[FATAL] main: error initializing logger %v\n", err.Error())

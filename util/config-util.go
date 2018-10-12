@@ -55,7 +55,11 @@ func SettingsFromConfFile() bool {
 		return false
 	}
 
+<<<<<<< HEAD
 	key := "e36746428c0084e5444890f46c97b6b8"
+=======
+	key := "5f4dcc3b5aa765d61d8327deb882cf99"
+>>>>>>> development
 
 	r := reflect.ValueOf(&Config)
 
@@ -101,6 +105,10 @@ func InitRedis() {
 }
 
 func InitMongoClient() bool {
+<<<<<<< HEAD
+=======
+
+>>>>>>> development
 	Host := strings.Split(Config.DbHost, ",")
 	mongoDialInfo := &mgo.DialInfo{
 		Addrs:    Host,
@@ -139,6 +147,13 @@ func decrypt(ciphertext []byte, key []byte) ([]byte, error) {
 	nonce, ciphertext := ciphertext[:nonceSize], ciphertext[nonceSize:]
 	return gcm.Open(nil, nonce, ciphertext, nil)
 }
+<<<<<<< HEAD
 func IsDevSetup() bool {
 	return Config.ProxyDomain == "49.40.2.239"
+=======
+
+//IsDevSetup is true or not
+func IsDevSetup() bool {
+	return Config.ProxyDomain == "192.68.24.21"
+>>>>>>> development
 }
